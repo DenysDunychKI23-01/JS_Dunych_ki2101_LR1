@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1 — Дунич Денис</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+        }
+        .badge {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #0d47a1;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        h1 { font-size: 22px; color: #1e293b; margin-bottom: 8px; }
+        .student-info { 
+            font-size: 14px; 
+            color: #64748b; 
+            margin-bottom: 20px; 
+            border-bottom: 1px solid #e2e8f0; 
+            padding-bottom: 12px; 
+        }
+        .description { font-size: 15px; margin-bottom: 15px; color: #475569; }
+        ul { list-style: none; display: flex; gap: 8px; flex-wrap: wrap; }
+        li {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #0f172a;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        li:hover {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Рівень 10-12 балів</span>
+        <h1>Завдання 1</h1>
+        <div class="student-info"><strong>Студент:</strong> Дунич Денис | <strong>Варіант:</strong> №6</div>
+        
+        <p class="description">Наведіть курсор миші на будь-яку літеру імені у списку нижче:</p>
+        <ul id="name-list"></ul>
+    </div>
+
+    <!-- Підключаємо зовнішній файл скрипта -->
+    <script src="task1.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2 — Дунич Денис</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+        }
+        .badge {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #0d47a1;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        h1 { font-size: 22px; color: #1e293b; margin-bottom: 8px; }
+        .student-info { 
+            font-size: 14px; 
+            color: #64748b; 
+            margin-bottom: 20px; 
+            border-bottom: 1px solid #e2e8f0; 
+            padding-bottom: 12px; 
+        }
+        .btn {
+            width: 100%;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            margin-bottom: 20px;
+        }
+        .btn:hover { background: #1d4ed8; }
+        h3 { font-size: 16px; color: #334155; margin-bottom: 10px; }
+        ol { 
+            padding-left: 20px; 
+            color: #475569; 
+        }
+        li { 
+            margin-bottom: 8px; 
+            font-size: 15px; 
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Рівень 10-12 балів</span>
+        <h1>Завдання 2</h1>
+        <div class="student-info"><strong>Студент:</strong> Дунич Денис | <strong>Варіант:</strong> №6</div>
+        
+        <button id="start-btn" class="btn">Запустити введення студентів</button>
+
+        <h3>Список введених студентів:</h3>
+        <ol id="students-list"></ol>
+    </div>
+
+    <script src="task2.js"></script>
+</body>
+</html>

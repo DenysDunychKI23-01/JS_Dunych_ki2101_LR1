@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 — Дунич Денис</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+        }
+        .badge {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #0d47a1;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        h1 { font-size: 22px; color: #1e293b; margin-bottom: 8px; }
+        .student-info { 
+            font-size: 14px; 
+            color: #64748b; 
+            margin-bottom: 20px; 
+            border-bottom: 1px solid #e2e8f0; 
+            padding-bottom: 12px; 
+        }
+        .links-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .links-list a {
+            display: block;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 14px 18px;
+            border-radius: 8px;
+            color: #1e293b;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+        .links-list a:hover {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Рівень 10-12 балів</span>
+        <h1>Лабораторна робота №1</h1>
+        <div class="student-info"><strong>Студент:</strong> Дунич Денис | <strong>Варіант:</strong> №6</div>
+        
+        <ul class="links-list">
+            <li><a href="task1.html">Завдання 1 — Список літер імені</a></li>
+            <li><a href="task2.html">Завдання 2 — Введення студентів</a></li>
+            <li><a href="task3.html">Завдання 3 — Блоки літер прізвища</a></li>
+        </ul>
+    </div>
+</body>
+</html>
